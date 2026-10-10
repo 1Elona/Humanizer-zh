@@ -1,4 +1,22 @@
-# Humanizer-zh：中文文本润色 Skill
+# 本分支：把 Agent 的中文汇报讲清楚
+
+本分支把 Humanizer-zh 适配为 `chinese-user-report`：Agent 用已有事实说明发生了什么、改了什么、现在有什么结果，以及接下来谁做什么。适用于日常进展、成果、问题说明和 SP 任务卡片；简单问题仍直接回答。
+
+根目录 [SKILL.md](SKILL.md) 是简短汇报入口，支持 Codex 自动选用。默认由当前 Agent 撰写，无需额外模型、后台服务或 MCP。软考教学、解题和学习复盘继续使用自己的方法，不自动套用这个汇报入口。
+
+Agent 交付、用户实际体验和任务勾选分别说明；润色不能把“还没确认”写成“已经修好”。标题说明具体事件和当前结果，备注分点讲影响、是否值得处理、谁来做，并提供可复制到新会话的接续文本。
+
+## 安装与使用本分支
+
+让 Codex 的 `skill-installer` 从 `1Elona/Humanizer-zh` 安装根路径 `.`，安装名指定为 `chinese-user-report`，并固定到你已审阅的提交。安装完成后，下一轮对话可发现该入口；日常汇报由 Agent 自动选用，无需你每次记住技能名。
+
+需要显式调用时，可以说：`用 $chinese-user-report 整理这段说明，讲清问题、影响、真实进度和下一步。`
+
+上游完整方法逐字保留在 [references/upstream-humanizer.md](references/upstream-humanizer.md)，来源为 `op7418/Humanizer-zh` 的 `f4518a8eab97b8bfebc66a89d34320a89bef6930`；原署名与 [MIT 许可](LICENSE) 保留。[report-cases.md](references/report-cases.md) 记录本分支的语义检查案例。下方保留上游项目介绍：其中安装命令面向原版 `humanizer-zh`，本分支请使用上面的安装入口；上游测试检查原版方法，不能替代本分支的行为检查。
+
+---
+
+# 上游项目介绍：Humanizer-zh
 
 编辑已有文章、评论和文档中的空话、重复及模板化表达，保留事实、确定程度和作者声音。输入是一段文字或一个文件，默认输出最终改写稿；没有问题的句子可以不改。
 
@@ -124,7 +142,7 @@ git clone https://github.com/op7418/Humanizer-zh.git ~/.claude/skills/humanizer-
 | E：聊天与草稿残留（22–25） | 客服腔、重复免责与猜测填充、首句复读标题、编辑过程残留 |
 | F：中文补充检查（26–31） | 长定语、“进行＋动词”、被字句堆叠、四字词排比、万能背景、套话收尾 |
 
-每条包括修改条件、前后示例和保留边界，详见 [SKILL.md](SKILL.md)。
+每条包括修改条件、前后示例和保留边界，详见 [保留的上游方法](references/upstream-humanizer.md)。
 
 ## 验证
 
