@@ -1,0 +1,6 @@
+interface:
+  display_name: "中文汇报：把事情讲清楚"
+  short_description: "把任务进展、问题和成果写成易读中文，保留真实状态、影响和下一步"
+  default_prompt: "用 $chinese-user-report 把已有事实写成普通读者能理解的中文说明。"
+policy:
+  allow_implicit_invocation: true
