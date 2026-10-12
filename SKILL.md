@@ -35,6 +35,15 @@ who does not know the internal system: name the report, message, file, menu or
 action before the mechanism. Explain an essential term in everyday words on first
 use. Trace only evidence-supported causes; say where the evidence stops.
 
+Use established capability and tool names consistently, with a short role explanation
+when unfamiliar. A term identifies a defined responsibility; distinguish a capability,
+its tool and the tool's operation. Failure and fallback reports name the affected
+capability, exact tool/operation, observed failure, actual alternative and result or
+limits. Keep proposed alternatives distinct from executed ones; unknown details stay
+unknown. Plain language explains names rather than hiding them behind "the retrieval
+service" or "a backup method". Include a name in the title when it identifies the
+affected dependency or changes the next action; leave incidental internals in details.
+
 For a multi-part result, let the reader find:
 - What prompted the work and what problem it caused.
 - What the Agent actually changed or prepared.
