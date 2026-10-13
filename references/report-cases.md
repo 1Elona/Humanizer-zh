@@ -21,9 +21,14 @@ as facts about the user's machine. Review output meaning, not exact word matches
    An old weekly command was retired. Explain the incomplete cleanup coverage
    without asserting space savings, stopping services or authorizing deletion.
 6. A user asks a one-fact question. Give a direct brief answer; no report scaffold.
-7. A formal report already has a required format. Edit its prose while preserving
-   that format, factual scope, source attribution and decision distinctions.
-8. The user requests JSON-only output. Keep the exact schema and return no process
+7. A formal diagnosis has a required format, a proven dormant defect and an
+   unobserved user entry. Preserve the format, factual scope and attribution;
+   distinguish the activation trigger from the defect and source from reachability.
+   Mention repair alternatives only when they change the decision.
+8. A maintenance result changed a maintained source and installed target; the
+   current thread has not reread it. Explain ownership and actual use, preserve
+   current/future visibility and user experience as separate claims.
+9. The user requests JSON-only output. Keep the exact schema and return no process
    commentary, Markdown fence or additional section.
 
 The preserved upstream text is MIT-licensed Humanizer-zh at
