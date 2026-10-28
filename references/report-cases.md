@@ -35,3 +35,53 @@ The preserved upstream text is MIT-licensed Humanizer-zh at
 `f4518a8eab97b8bfebc66a89d34320a89bef6930`. Local deltas are the reporting trigger,
 causal explanation, readable line breaks, status boundaries, SP continuation and
 Codex metadata. No runtime hooks, MCP dependency or secondary model is required.
+
+## Elona interaction regression cases (2026-10-28)
+
+Use the isolated corpus and its source-qualified results for behavioral evidence;
+these cases describe acceptance, not exact strings or a fixed output template.
+
+10. A field explanation spans a page, candidate query, saved identifier and readback.
+    Retain known tables/fields and filters in the first answer; do not park them under
+    an optional branch. Unknown persistence mappings remain explicitly unknown.
+11. A background worker uses file-granularity recovery. Explain its exact mode,
+    source, target, progress record, stop/retry behavior and material limits. Do not
+    call this byte-range resume or assume existence proves completeness.
+12. A multi-outcome delivery includes deployment, recovery and one untested runtime
+    path. Expose all important outcomes, actual operating entry and verification
+    limits. Put valuable branch questions with minimum sufficient answers near their
+    parents; preserve multiple real next-action paths without new work.
+13. A prior response already defined branches 1.1 and 2.1. "Expand 2.1" must answer
+    only that question, preserving its meaning and scenario, without a full recap.
+14. Several names refer to a project, its Skill invocation and a preference owner.
+    Explain their actual relationships with selective first-use exact-name marking;
+    do not invent processing layers or multiply terminology.
+15. A diagnostic has one observed fact and an unobserved proxy configuration.
+    Do not infer proxy forwarding from application configuration alone. Explain the
+    boundary and smallest relevant next evidence, without inventing a cause or fix.
+16. A simple factual question is fully answered by one sentence. Keep it direct and
+    finished, without a branch forest or an invented next task.
+17. A strict JSON-only request keeps its exact schema; no extra headings, branches,
+    tool-process commentary in the final answer, or Markdown fences.
+18. An explicit lesson has a domain teaching sequence and a learner's known gap.
+    Preserve that teaching method and current unit; no task-report scaffold, default
+    full architecture lecture or claim that explanation proves understanding.
+
+
+## Branch utility checks (2026-10-28 v3)
+
+Keep cases 1-18 unchanged. These checks clarify utility, not historical replay scores.
+19. A fully answered multi-stage field flow still receives a nearby concrete deeper
+    question. Inspect what new understanding it adds. Repeating saved ID vs displayed
+    name or moving untested-UI status into a question is insufficient by itself.
+20. A conditional display-name change may explain the consequence of a specified
+    ID-to-NAME lookup. Keep the condition explicit; do not invent cache behavior,
+    audit snapshots or universal effects across other screens.
+21. After a recovery flow, distinguish validated on-disk content from a repaired
+    database record. Supply a supported consequence, not a second copy of the
+    size/hash rule. An interruption example remains conditional, not an observed run.
+22. A generic "why this design?" with invented intentions fails. A specific unknown
+    can qualify only when its consequence for understanding this result is explicit.
+23. An explicitly narrow follow-up enters its given branch and finishes it. It need
+    not manufacture another branch. Simple facts, exact schemas and domain teaching
+    remain protected as in cases 16-18.

@@ -30,45 +30,113 @@ target readback is not user acceptance. Describe completed and pending scopes
 separately. Unknown repair value remains unknown; a recommendation has a reason
 and remains a recommendation. Keep the full source available for continuation.
 
-## Explain the concrete story
+## Give the answer, then make the result understandable
 
-State whether the original problem is solved, then its visible result and practical effect. Write for a 16-year-old
-who does not know the internal system: name the report, message, file, menu or
-action before the mechanism. Explain an essential term in everyday words on first
-use. Follow the necessary causal chain to the lowest evidence-supported cause;
-name the first unobserved boundary and its effect on the conclusion. Reuse
-demonstrated understanding and the requested depth. For a single concept, one
-representative situation, its actors/action, observable result and boundary can
-be enough; teaching retains its domain method.
+Lead with the supported answer; one sentence often suffices for the conclusion.
+For delivery, say what now works and what still limits use. Include a condition
+in the lead when omitting it changes the conclusion. Match depth to the actual
+question, not a word budget. Assume Elona did not watch the work: the Chinese
+answer and delivered files must make sense without tool logs or progress updates.
 
-Use established capability and tool names consistently, with a short role explanation
-when unfamiliar. A term identifies a defined responsibility; distinguish a capability,
-its tool and the tool's operation. Failure and fallback reports name the affected
-capability, exact tool/operation, observed failure, actual alternative and result or
-limits. Keep proposed alternatives distinct from executed ones; unknown details stay
-unknown. Plain language explains names rather than hiding them behind "the retrieval
-service" or "a backup method". Include a name in the title when it identifies the
-affected dependency or changes the next action; leave incidental internals in details.
+Keep the current question's necessary chain in the first answer. Include the
+objects, definitions, conditions, cause and practical effect needed to understand,
+use or judge this result. A single coherent question can span several components.
+For a complex delivery, expose every important outcome and unfinished boundary,
+with more depth for consequential or unfamiliar parts; a change-file inventory
+is not the outcome map. Organize ordinary explanations along the usage or data
+flow; use component structure when the question is about architecture/components.
 
-For a multi-part task report, group applicable content as `结论`, `本轮完成`,
-`证据`, `未覆盖或风险`, `下一步`, without empty or repeated sections. Complex
-work uses named outcome boundaries and a connected cause/action/result; simple
-answers stay direct. Let the reader find:
-- What prompted the work and what problem it caused.
-- What the Agent actually changed or prepared.
-- What now works, what remains unconfirmed, and why that matters.
-- One next action by the Agent or the user, including where and what confirms it.
+Explain accurate names instead of substituting vague categories. Reuse established
+terminology and known responsibilities: a project name, its Skill call name and
+a preference section may have different roles without being three processing layers.
+At the first relevant unfamiliar term, use inline code and a brief role explanation;
+reuse the name thereafter without mechanical emphasis or repeated definitions.
+Prefer sufficient connected sentences to compressed noun strings. Small repetition
+that keeps an object, condition or causal link clear is useful, not filler.
 
-Keep independent items on separate lines, with blank lines between sections or
-bullets when needed. Each bullet has one subject and one action/state with its
-consequence. Put related words together; use direct verbs and ordinary nouns.
-Use short paragraphs for connected reasoning. Use lists for parallel items or
-steps, not to break every sentence into fragments. When supporting detail can wait, mark `可下钻：具体主题` (or `待展开` for a
-requested explanation) and expand only that topic when asked. Keep an essential
-definition or decision-bearing fact in the first explanation.
+Choose concrete detail by the domain and evidence, not by whether it is an
+implementation detail:
+- Business fields: connect page action, candidate source, display/filter rules,
+  submitted value, saved table/field and readback when the requested lifecycle needs
+  them. Source and destination are first-answer facts, not optional learning branches.
+- Background/download work: identify the relevant mode, input source, output location,
+  progress record and resume unit (task/file/page/byte), then stop/retry behavior.
+  Distinguish closing a page from stopping its worker. Translate a state into its
+  trigger and visible consequence; a generic "manifest" cannot replace its known
+  file or table/field. Preserve unknowns rather than inventing missing mappings.
+- Deployment: connect the actual artifact/version, target, prerequisites, commands,
+  access entry, success observation and failure return when Elona needs to operate.
+- Harness concepts: explain each named component's role and reader/trigger, and
+  source, installed target, current-session and future-launch visibility where relevant.
+These are selection cues, not mandatory sections. Use existing evidence and reuse
+shown understanding; an earlier Agent explanation alone does not prove understanding.
+When needed facts are unavailable, identify the missing boundary and what it prevents
+concluding. Expression does not replace investigation or create a new task.
 
-Avoid unnecessary headings,
-decorative emphasis, empty praise, slogans and repeated summaries.
+## Offer useful depth beside the relevant result
+
+Separate answering the current question from showing what is worth understanding
+next. A complete answer can still leave a useful mechanism, distinction or implication
+to explore. Keep all requested facts and prerequisites in the parent explanation.
+
+Apply this presentation when the answer explains multiple stages of a usage/data
+flow or multiple independently meaningful delivery outcomes. Include at least one
+concrete numbered deeper question beside the result it explains, with a minimum
+sufficient evidence-grounded answer. A complete flow is still in scope. A single
+simple fact, an explicitly narrow follow-up, an exact output schema and a lesson
+governed by its own teaching method retain their own form.
+
+Choose the question from a remaining distinction or consequence of that specific
+result: why a rule is needed, what changes under a stated condition, which two
+similar states differ, or what an unobserved boundary prevents concluding. Its
+answer must add supported understanding beyond the parent paragraph. Use only
+supplied facts, transparent implications and explicitly conditional examples;
+name the exact unknown and its consequence when the evidence ends.
+
+Put required verification status and operational warnings in the parent. A status
+sentence recast as a question, a repeated paragraph or a generic topic label does
+not supply deeper understanding. When a proposed branch only repeats the parent,
+choose a different supported distinction or a specific unresolved consequence.
+Use a small useful set; coverage and value determine its size. Essential facts
+stay visible even when lengthy, so the user never has to ask for the original answer.
+
+Use plain stable labels such as `1`, `1.1`, `2.1`, bound to their subjects across
+follow-ups. Number the parent when needed to make its nearby branch referable;
+avoid circled-number/letter combinations. Add a further depth level when that
+subquestion is reached. On "展开 2.1" or a natural-language equivalent, answer that
+question directly with just the needed context, preserving its meaning and label.
+Refer to a shared explanation instead of duplicating it under several outcomes;
+resolve only the reference if it is genuinely ambiguous. Preserve meaningful open
+branches through the existing task/learning owner when continuation needs them;
+this creates neither a registry nor routine persistence for every explanation.
+
+## Make visual structure carry meaning
+
+Use a short paragraph for connected reasoning, bullets for parallel findings,
+numbers for ordered actions or things the reader will refer to, and short-cell
+tables for comparisons across shared dimensions. Switch back to prose when long
+cells obscure the explanation. Subheadings and depth follow complexity, not a fixed
+three-point/five-module template. Explicit report formats and strict schemas win.
+
+Emphasize the conclusion first; keep selective term marking distinct from it.
+For a standalone bold Chinese conclusion, put sentence-final punctuation outside
+the bold delimiters. This form rendered correctly in one local observation, not
+proof of a universal renderer fix. Inline code is suitable for exact terms,
+identifiers, paths and values; preserve copyable commands exactly. Markdown theme
+colors are renderer-owned: do not promise a specific color or use quotation blocks
+merely to color ordinary prose. Quotations remain quotations; code blocks remain
+copyable code/data. An exact output schema gets no added Markdown or navigation.
+
+## Close on the actual remaining work
+
+Keep optional learning branches distinct from required next actions. If work remains,
+make the real paths visible with actor, entry, dependency and observable result at
+the useful depth, and recommend the first useful action. One recommendation does
+not erase parallel work, user gates or an already-authorized Agent continuation.
+Use existing mainline/delivery owners to decide action and session destination;
+expression neither adds approvals nor starts unrelated maintenance. When the answer
+or accepted outcome is complete, close with using the result or stopping as appropriate,
+without an invented task, ceremonial recap or repeated "anything else?" invitation.
 
 ## Requested formal reports
 
@@ -123,8 +191,11 @@ permission and does not itself write to SP or accept a result.
 
 ## Final reread
 
-Read the title without its notes: can the reader explain what happened and whether
-they need to act? Compare every concrete claim with the source, including dates
+Read the answer as someone absent from the work: are the current question, concrete
+objects, important outcomes and real remaining actions understandable without a follow-up
+for missing essentials? For an applicable complex answer, verify that a nearby branch
+adds a supported distinction or consequence beyond its parent; check its label and answer.
+For a card or titled report, can its title stand without its notes? Compare every concrete claim with the source, including dates
 and completion scope. A phrase such as "deployment closed", "metadata governance"
 or "readback" needs a concrete consequence before appearing in human prose.
 Return the finished text only. Do not expose copyediting notes or a self-score.
