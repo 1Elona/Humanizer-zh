@@ -85,3 +85,25 @@ Keep cases 1-18 unchanged. These checks clarify utility, not historical replay s
 23. An explicitly narrow follow-up enters its given branch and finishes it. It need
     not manufacture another branch. Simple facts, exact schemas and domain teaching
     remain protected as in cases 16-18.
+
+## Natural-use failure and protected boundaries (2026-10-29)
+
+24. A substantial recovery explanation compares raw chats, searchable archives and
+    collection copies, then distinguishes restored search from completed cleanup.
+    It has a useful conclusion, table, evidence limits and real next action, but
+    omits every numbered understanding branch. This fails the Depth requirement;
+    a next-action paragraph does not substitute for a nearby concrete `可下钻` or
+    `待展开` question with an answer adding supported understanding. The screenshot
+    proves the omission, not the exact loaded Skill revision or its internal cause.
+25. Explaining established technical findings to Elona uses this expression method.
+    Technical investigation itself stays with its diagnostic owner; do not interpret
+    that ownership boundary as excluding the resulting Chinese explanation.
+26. A short parameter table or list of file names alone does not establish complex
+    explanatory scope. Retain the simple/narrow/exact-format/teaching boundaries.
+27. A qualifying complex answer is complete but can still explain a useful specific
+    consequence or distinction in a nearby branch. Keep prerequisites, necessary
+    cause, warnings and verification status in the main explanation. A generic
+    heading or a question merely repeating pending status does not qualify.
+
+These are retained acceptance references. No new model replay was run for this
+repair; Elona explicitly chose immediate daily-runtime use and natural-use review.

@@ -1,6 +1,6 @@
 ---
 name: chinese-user-report
-description: "Present Agent progress, results, problems, requested formal reports and SP task cards in clear simplified Chinese for a nontechnical reader. Use as the normal reporting step after facts are established. Not for technical diagnosis, exam tutoring or learning reviews, model-facing documents, literary rewriting, or replacing an explicitly requested output schema."
+description: "Write Chinese explanations, progress, results, problems, formal reports and SP prose before drafting, including explanations of established technical findings. The current Agent applies this sole expression method; domain methods establish facts and decisions. Simple facts, narrow follow-ups, exact formats and domain teaching keep their form. Model-facing assets and literary rewriting are outside scope."
 metadata:
   upstream: "op7418/Humanizer-zh"
   upstream_revision: "f4518a8eab97b8bfebc66a89d34320a89bef6930"
@@ -8,199 +8,182 @@ metadata:
 
 # Chinese User Reports
 
-Use the current main Agent to turn established facts into a readable report. Work
-from supplied evidence; text-only editing needs no repository search, tool call,
-secondary model, score or editing report. Apply the user's format and depth first.
-One clear sentence can be the whole answer to a simple question. This is the sole
-maintained expression method; domain owners still establish conclusions, evidence,
-completion, authority and acceptance. Preserve an explicitly requested report
-format, output schema and depth.
-Exam teaching, problem-solving and learning reviews keep their own domain method;
-do not automatically reshape them with this reporting step. Editing presentation
-does not choose a technical method, change priorities or reopen settled work.
+The current main Agent applies this method **before drafting** a substantive Chinese
+reply. Reuse the current method already in context; load it when absent or changed.
+Work from established evidence. The same method covers explaining a technical
+diagnosis to Elona; the diagnostic method still owns investigation and conclusions.
+Text-only presentation needs no secondary model, scoring service or editing report.
 
-## Preserve meaning before style
+## Before drafting
 
-Reuse Humanizer-zh's fact and certainty preservation: retain independent facts,
-dates, conditions, actors, negation, scope, attribution and completion state.
-Improve the wording without adding a cause, repair, benefit or experience.
-Keep protected quotations, commands, IDs, paths, links and data exact where they
-are needed. A dated incident is not evidence of a current fault. A local check or
-target readback is not user acceptance. Describe completed and pending scopes
-separately. Unknown repair value remains unknown; a recommendation has a reason
-and remains a recommendation. Keep the full source available for continuation.
+1. **Choose the form.** Follow the user's requested format and depth. An exact output
+   schema keeps its exact form. Exam teaching, problem-solving and learning reviews
+   keep their domain method. A simple fact, a brief progress update or an explicitly
+   narrow follow-up gets a direct answer. On "展开 2.1" or equivalent, answer that
+   branch with its existing label and meaning, using only the needed context.
+2. **Recover the necessary chain.** Identify the actual question, concrete objects,
+   relevant conditions, cause, practical effect and evidence limit. Keep everything
+   needed to understand, use or judge the answer in the main explanation. Reuse
+   established terminology and the user's demonstrated understanding.
+3. **Write the answer first.** Lead with the supported conclusion, including any
+   condition that changes it. Group complex explanations into referable numbered
+   subjects; connect their reasoning with sufficient sentences. Organize by usage or
+   data flow, or by components when the question asks about architecture. All
+   important outcomes and unfinished boundaries remain visible, with depth matched
+   to consequence and unfamiliarity.
+4. **Apply Depth.** Use the trigger and nearby branch form below. A complete answer
+   still needs this step when it qualifies. A real work next action serves a
+   different purpose from an optional understanding branch.
+5. **Check before sending.** Read the actual draft against the question and evidence.
+   Check the required concrete chain, correct form, applicable Depth branch and real
+   remaining action. Repair omissions in this reply before sending it; the user
+   should not have to identify a missing requirement and request it again. Return
+   the finished reply, without narrating this check or reporting a self-score.
 
-## Give the answer, then make the result understandable
+## Depth: make useful follow-ups visible
 
-Lead with the supported answer; one sentence often suffices for the conclusion.
-For delivery, say what now works and what still limits use. Include a condition
-in the lead when omitting it changes the conclusion. Match depth to the actual
-question, not a word budget. Assume Elona did not watch the work: the Chinese
-answer and delivered files must make sense without tool logs or progress updates.
+Apply Depth to a substantive ordinary explanation connecting **two or more meaningful
+stages, components, states, mechanisms, outcomes or comparison dimensions**. Judge
+the explanation, not just the user's short question. A complete flow qualifies.
+A short inventory of names or values alone does not. The protected forms in step 1
+keep their boundaries; a table or item count alone does not override them.
 
-Keep the current question's necessary chain in the first answer. Include the
-objects, definitions, conditions, cause and practical effect needed to understand,
-use or judge this result. A single coherent question can span several components.
-For a complex delivery, expose every important outcome and unfinished boundary,
-with more depth for consequential or unfamiliar parts; a change-file inventory
-is not the outcome map. Organize ordinary explanations along the usage or data
-flow; use component structure when the question is about architecture/components.
+For a qualifying reply, include at least one concrete numbered deeper question
+beside its relevant result. Use the visible form `1.1 可下钻：<specific question>`;
+`1.1 待展开：<specific question>` is equivalent. Replace the placeholder with the
+actual question, and give a minimum sufficient evidence-grounded answer immediately
+below it. Number the parent when needed so the branch is referable. Use stable
+plain labels such as `1`, `1.1`, `2.1`, and preserve their subjects in follow-ups.
 
-Explain accurate names instead of substituting vague categories. Reuse established
-terminology and known responsibilities: a project name, its Skill call name and
-a preference section may have different roles without being three processing layers.
-At the first relevant unfamiliar term, use inline code and a brief role explanation;
-reuse the name thereafter without mechanical emphasis or repeated definitions.
-Prefer sufficient connected sentences to compressed noun strings. Small repetition
-that keeps an object, condition or causal link clear is useful, not filler.
+Choose a supported distinction, mechanism or consequence that adds understanding
+beyond the parent. Explain why a rule is needed, what changes under a stated
+condition, how two similar states differ, or what a specific unknown prevents
+concluding. Use supplied facts, transparent implications and explicitly conditional
+examples. When evidence ends, identify the exact unknown and its consequence.
+Use a small useful set of branches; their value and coverage determine its size.
 
-Choose concrete detail by the domain and evidence, not by whether it is an
-implementation detail:
-- Business fields: connect page action, candidate source, display/filter rules,
-  submitted value, saved table/field and readback when the requested lifecycle needs
-  them. Source and destination are first-answer facts, not optional learning branches.
-- Background/download work: identify the relevant mode, input source, output location,
-  progress record and resume unit (task/file/page/byte), then stop/retry behavior.
-  Distinguish closing a page from stopping its worker. Translate a state into its
-  trigger and visible consequence; a generic "manifest" cannot replace its known
-  file or table/field. Preserve unknowns rather than inventing missing mappings.
-- Deployment: connect the actual artifact/version, target, prerequisites, commands,
-  access entry, success observation and failure return when Elona needs to operate.
-- Harness concepts: explain each named component's role and reader/trigger, and
-  source, installed target, current-session and future-launch visibility where relevant.
-These are selection cues, not mandatory sections. Use existing evidence and reuse
-shown understanding; an earlier Agent explanation alone does not prove understanding.
-When needed facts are unavailable, identify the missing boundary and what it prevents
-concluding. Expression does not replace investigation or create a new task.
+Keep requested facts, prerequisites, verification status, warnings and work next
+actions in the parent. An optional branch deepens understanding after that answer.
+A status sentence recast as a question, repeated paragraph, generic topic label or
+list of proposed tasks does not meet this requirement. Choose another supported
+distinction when a proposed branch only repeats its parent.
 
-## Offer useful depth beside the relevant result
+For example, given evidence that search is restored while old-copy completeness
+and recovery dependencies are still unchecked:
 
-Separate answering the current question from showing what is worth understanding
-next. A complete answer can still leave a useful mechanism, distinction or implication
-to explore. Keep all requested facts and prerequisites in the parent explanation.
+- A parent states that the old copies are not yet established as deletable.
+- `1.1 可下钻：为什么恢复搜索还不能证明旧副本可删？` can explain that a working
+  query proves access, while deletion also depends on whether unique history or
+  recovery still needs those copies. The supplied evidence leaves that boundary open.
+- `1.1 待展开：哪些文件可删？` followed only by "还需核对" repeats pending status;
+  it provides no additional understanding.
 
-Apply this presentation when the answer explains multiple stages of a usage/data
-flow or multiple independently meaningful delivery outcomes. Include at least one
-concrete numbered deeper question beside the result it explains, with a minimum
-sufficient evidence-grounded answer. A complete flow is still in scope. A single
-simple fact, an explicitly narrow follow-up, an exact output schema and a lesson
-governed by its own teaching method retain their own form.
+On reaching a subquestion, answer it directly and add a further depth level only
+when that reached question benefits from it. Refer to shared explanations instead
+of duplicating them. Preserve meaningful open branches through the existing task
+or learning owner when continuation needs them; this creates no routine registry.
 
-Choose the question from a remaining distinction or consequence of that specific
-result: why a rule is needed, what changes under a stated condition, which two
-similar states differ, or what an unobserved boundary prevents concluding. Its
-answer must add supported understanding beyond the parent paragraph. Use only
-supplied facts, transparent implications and explicitly conditional examples;
-name the exact unknown and its consequence when the evidence ends.
+## Preserve facts and authority
 
-Put required verification status and operational warnings in the parent. A status
-sentence recast as a question, a repeated paragraph or a generic topic label does
-not supply deeper understanding. When a proposed branch only repeats the parent,
-choose a different supported distinction or a specific unresolved consequence.
-Use a small useful set; coverage and value determine its size. Essential facts
-stay visible even when lengthy, so the user never has to ask for the original answer.
+Retain independent facts, dates, conditions, actors, negation, scope, attribution
+and completion state. Preserve protected quotations, commands, IDs, paths, links
+and data exactly where needed. Improve wording without adding causes, repairs,
+benefits or experience. Keep the full source available for continuation.
 
-Use plain stable labels such as `1`, `1.1`, `2.1`, bound to their subjects across
-follow-ups. Number the parent when needed to make its nearby branch referable;
-avoid circled-number/letter combinations. Add a further depth level when that
-subquestion is reached. On "展开 2.1" or a natural-language equivalent, answer that
-question directly with just the needed context, preserving its meaning and label.
-Refer to a shared explanation instead of duplicating it under several outcomes;
-resolve only the reference if it is genuinely ambiguous. Preserve meaningful open
-branches through the existing task/learning owner when continuation needs them;
-this creates neither a registry nor routine persistence for every explanation.
+A dated incident does not establish a current fault. A local check or target
+readback is not user acceptance. Explain completed and pending scopes separately;
+an unknown repair value stays unknown, and a recommendation keeps its reason and
+status as a recommendation. Domain owners retain conclusions, evidence, completion,
+authority and acceptance. Presentation does not reopen priorities or create work.
+
+## Explain the concrete result
+
+Assume Elona did not watch the work: the reply and delivered files must make sense
+without logs or progress updates. Explain accurate names instead of replacing them
+with vague categories. A project, its Skill call name and a preference section can
+have different roles without being three processing layers. At the first relevant
+unfamiliar term, use inline code plus a brief role explanation; reuse it thereafter
+without mechanical marking. Prefer connected sentences to compressed noun strings.
+Small repetition that keeps an object, condition or causal link clear is useful.
+
+Choose detail by the actual question and evidence:
+
+- **Business:** retain the requested lifecycle's page action, candidate source,
+  display/filter rules, submitted value, saved table/field and readback. Known source
+  and destination are first-answer facts, not optional branches.
+- **Background/download work:** connect mode, input source, output location, progress
+  record, resume unit (task/file/page/byte) and stop/retry behavior. Distinguish closing
+  a page from stopping its worker; name the known progress file or table/field.
+- **Deployment:** connect artifact/version, target, prerequisites, commands, access
+  entry, success observation and failure return when the user needs to operate it.
+- **Harness:** explain each relevant component's role and reader/trigger; distinguish
+  maintained source, installed target, current-session visibility and future launch.
+
+These are selection cues, not mandatory sections. An earlier Agent explanation
+alone does not prove understanding. When necessary facts are unavailable, name the
+missing boundary and what it prevents concluding; presentation cannot invent it.
 
 ## Make visual structure carry meaning
 
-Use a short paragraph for connected reasoning, bullets for parallel findings,
-numbers for ordered actions or things the reader will refer to, and short-cell
-tables for comparisons across shared dimensions. Switch back to prose when long
-cells obscure the explanation. Subheadings and depth follow complexity, not a fixed
-three-point/five-module template. Explicit report formats and strict schemas win.
+Use paragraphs for connected reasoning, bullets for parallel findings, numbers for
+referable subjects or ordered actions, and short-cell tables for comparisons on
+shared dimensions. Use prose when long cells obscure reasoning. Shape follows the
+question's complexity, not a fixed three-point or five-module template.
 
-Emphasize the conclusion first; keep selective term marking distinct from it.
-For a standalone bold Chinese conclusion, put sentence-final punctuation outside
-the bold delimiters. This form rendered correctly in one local observation, not
-proof of a universal renderer fix. Inline code is suitable for exact terms,
-identifiers, paths and values; preserve copyable commands exactly. Markdown theme
-colors are renderer-owned: do not promise a specific color or use quotation blocks
-merely to color ordinary prose. Quotations remain quotations; code blocks remain
-copyable code/data. An exact output schema gets no added Markdown or navigation.
+Emphasize the conclusion first and mark terms selectively. Put sentence-final
+punctuation outside a standalone bold Chinese conclusion; this rendered correctly
+in one local observation, not every renderer. Keep code blocks copyable and quotes
+as quotations. Theme colors belong to the renderer; present ordinary prose normally
+instead of using quotation blocks to promise color. Exact schemas get their exact form.
 
 ## Close on the actual remaining work
 
-Keep optional learning branches distinct from required next actions. If work remains,
-make the real paths visible with actor, entry, dependency and observable result at
-the useful depth, and recommend the first useful action. One recommendation does
-not erase parallel work, user gates or an already-authorized Agent continuation.
-Use existing mainline/delivery owners to decide action and session destination;
-expression neither adds approvals nor starts unrelated maintenance. When the answer
-or accepted outcome is complete, close with using the result or stopping as appropriate,
-without an invented task, ceremonial recap or repeated "anything else?" invitation.
+Keep optional understanding branches distinct from required work. When work remains,
+show the real paths with actor, entry, dependency and observable result at useful
+depth; recommend the first useful action. Preserve parallel work, user gates and
+already-authorized Agent continuation. Existing mainline and delivery owners decide
+action and current-session/new-session/closure destination. When the outcome is
+complete, close with use or stopping; avoid inventing a task or another invitation.
 
 ## Requested formal reports
 
-For a formal decision, diagnosis, closeout or maintenance report, select the
-questions relevant to the established result. This is conditional content, not
-another template or technical workflow:
+Preserve the requested format. Select the explanation needed for this result:
 
-- Implementation: explain the previous problem and resulting behavior at the
-  user's actual entry, including what remains unavailable.
-- Diagnosis or decision: connect the observed operation through evidenced
-  boundaries to the supported cause. Distinguish a dormant defect from its
-  activating trigger when timing matters. Explain a chosen repair and alternatives
-  only when their difference changes the decision; connect a risk's trigger,
-  consequence and response. Source consumers do not prove reachable user behavior.
-- Validation or delivery: tie each relevant check to its observation, proven scope
-  and remaining gap. Separate commit, publication, deployed target, current-session
-  visibility, future launch and user experience; keep their accepted actors.
-- Maintenance: explain the ownership or usage change and how the user benefits.
-  State automatic/on-demand use or a needed session/action, plus material
-  prerequisites, permissions, cost or recovery from their existing owners. Name
-  files/terms only when they help use, maintain, recover or assess the result.
-- Comparison: explain the decision-bearing difference, evidence or accepted
-  requirement, benefit, cost and uncertainty.
+- **Implementation:** connect the previous problem to resulting behavior at the
+  actual user entry, including what remains unavailable.
+- **Diagnosis/decision:** connect the observed operation, evidenced boundaries and
+  supported cause. Distinguish a dormant defect from its trigger, and source from
+  reachable behavior. Explain alternatives when their difference changes the
+  decision; connect a risk's trigger, consequence and response.
+- **Validation/delivery:** tie checks to observations, proven scope and gaps. Keep
+  commit, publication, deployed target, session visibility and user experience
+  separate, with their accepted actors.
+- **Maintenance:** explain the ownership/usage change, user benefit, automatic or
+  on-demand use, needed session/action, and material prerequisites, permissions,
+  cost or recovery from their existing owners.
+- **Comparison:** explain decision-bearing differences, supporting evidence or
+  accepted requirements, benefits, costs and uncertainty.
 
-Group facts by the reader's decision, not command order. Keep a necessary causal
-chain connected; tables, timelines, diagrams or an evidence appendix are optional
-navigation aids. Exact commands, files and commits support claims, not substitute
-for explaining them. Preserve useful closeout dimensions from their owners without
-turning them into mandatory headings or another ledger. Choose the next action
-through the existing mainline/session policy; finished work can end with using the
-result or stopping, without inventing extra work.
+Group by the reader's decision. A change-file inventory is not an outcome map;
+paths, commands and commits support the explanation. Tables, timelines, diagrams
+and evidence appendices are optional aids, not a second reporting workflow.
 
 ## SP cards
 
-The transport owner provides the type/status prefix; compose its causal title
-as a short story: concrete situation, actual change or remaining action, present
-result/effect. Include only clauses supported by the source. Put commands, model
-IDs and source hashes in technical details, rather than making them the title.
-The prefix cannot replace an understandable title. Preserve a user's own title.
+The transport owner supplies the type/status prefix. Write a causal title with the
+concrete situation, actual change or remaining action, and present effect. Preserve
+the user's title; put commands, model IDs and hashes in technical details.
 
-Notes put the effect, repair value, truthful status and next action near the top,
-in separate readable bullets. Say `Agent` or `你`; an informational item can say
-`目前无需你操作`. Distinguish Agent delivery, a needed decision, a required trial,
-and optional feedback during normal use. State pending user experience explicitly
-without inventing an urgent test or asking the user to retest every feature.
+Put effect, repair value, truthful status and next action near the top in readable
+bullets. Say `Agent` or `你`; informational items can say `目前无需你操作`. Distinguish
+Agent delivery, a needed decision, a required trial and optional normal-use feedback.
+State pending user experience without inventing an urgent or repeated test.
 
-Finish an actionable card with a copyable continuation request containing enough
-facts and exact source locators for a new session. Keep source evidence and
-implementation details below the reader's practical explanation. Existing
-publication rules decide whether, where and how to publish; editing grants no
-permission and does not itself write to SP or accept a result.
-
-## Final reread
-
-Read the answer as someone absent from the work: are the current question, concrete
-objects, important outcomes and real remaining actions understandable without a follow-up
-for missing essentials? For an applicable complex answer, verify that a nearby branch
-adds a supported distinction or consequence beyond its parent; check its label and answer.
-For a card or titled report, can its title stand without its notes? Compare every concrete claim with the source, including dates
-and completion scope. A phrase such as "deployment closed", "metadata governance"
-or "readback" needs a concrete consequence before appearing in human prose.
-Return the finished text only. Do not expose copyediting notes or a self-score.
+End an actionable card with a copyable continuation request containing sufficient
+facts and exact source locators for a new session. Existing publication rules own
+permission and destination; expression does not publish or accept the result.
 
 For difficult long-form style or author-voice editing, read the preserved
-[upstream method](references/upstream-humanizer.md). For behavioral review of this
-reporting adaptation, use [report cases](references/report-cases.md); these are
-test inputs and acceptance boundaries, not wording to copy into every report.
+[upstream method](references/upstream-humanizer.md). For behavioral review use
+[report cases](references/report-cases.md); they describe acceptance boundaries,
+not strings to paste into every reply.
