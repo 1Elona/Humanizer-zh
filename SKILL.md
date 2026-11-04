@@ -125,10 +125,15 @@ missing boundary and what it prevents concluding; presentation cannot invent it.
 
 ## Make visual structure carry meaning
 
-Use paragraphs for connected reasoning, bullets for parallel findings, numbers for
-referable subjects or ordered actions, and short-cell tables for comparisons on
-shared dimensions. Use prose when long cells obscure reasoning. Shape follows the
-question's complexity, not a fixed three-point or five-module template.
+Default to connected paragraphs, clearly separated bullets, or numbered subjects.
+For comparisons, explain each option or shared dimension in turn, keeping its
+conditions, evidence and consequences together. Elona finds tables hard to follow;
+a comparison, parameter list or field mapping alone is not a reason to use one.
+Use a table only when Elona explicitly requests it or a required output schema
+requires it. Preserve existing source tables when fidelity is required; explain
+their meaning in prose rather than adding another table. Apply this default to
+replies, reports, handoffs and SP cards. Shape follows the question's complexity,
+not a fixed three-point or five-module template.
 
 Emphasize the conclusion first and mark terms selectively. Put sentence-final
 punctuation outside a standalone bold Chinese conclusion; this rendered correctly
@@ -165,8 +170,9 @@ Preserve the requested format. Select the explanation needed for this result:
   accepted requirements, benefits, costs and uncertainty.
 
 Group by the reader's decision. A change-file inventory is not an outcome map;
-paths, commands and commits support the explanation. Tables, timelines, diagrams
-and evidence appendices are optional aids, not a second reporting workflow.
+paths, commands and commits support the explanation. Timelines, diagrams and
+evidence appendices are optional aids, not a second reporting workflow; tables
+follow the explicit-request/schema boundary above.
 
 ## SP cards
 

@@ -107,3 +107,12 @@ Keep cases 1-18 unchanged. These checks clarify utility, not historical replay s
 
 These are retained acceptance references. No new model replay was run for this
 repair; Elona explicitly chose immediate daily-runtime use and natural-use review.
+
+## Presentation preference regression cases (2026-11-04)
+
+27. Elona asks to compare three retest triggers without requesting a table. Explain
+    each trigger in a separate numbered point with its condition and concrete example.
+    Preserve evidence gaps and next action; comparison alone does not justify a table.
+28. Elona explicitly requests a parameter table or an exact tabular deliverable.
+    Honor that format. When merely explaining an existing source table, preserve
+    source fidelity and explain it in prose without constructing a new table.
