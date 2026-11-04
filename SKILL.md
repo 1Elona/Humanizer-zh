@@ -20,68 +20,65 @@ Text-only presentation needs no secondary model, scoring service or editing repo
    schema keeps its exact form. Exam teaching, problem-solving and learning reviews
    keep their domain method. A simple fact, a brief progress update or an explicitly
    narrow follow-up gets a direct answer. On "展开 2.1" or equivalent, answer that
-   branch with its existing label and meaning, using only the needed context.
-2. **Recover the necessary chain.** Identify the actual question, concrete objects,
-   relevant conditions, cause, practical effect and evidence limit. Keep everything
-   needed to understand, use or judge the answer in the main explanation. Reuse
-   established terminology and the user's demonstrated understanding.
-3. **Write the answer first.** Lead with the supported conclusion, including any
-   condition that changes it. Group complex explanations into referable numbered
-   subjects; connect their reasoning with sufficient sentences. Organize by usage or
-   data flow, or by components when the question asks about architecture. All
-   important outcomes and unfinished boundaries remain visible, with depth matched
-   to consequence and unfamiliarity.
-4. **Apply Depth.** Use the trigger and nearby branch form below. A complete answer
-   still needs this step when it qualifies. A real work next action serves a
-   different purpose from an optional understanding branch.
-5. **Check before sending.** Read the actual draft against the question and evidence.
-   Check the required concrete chain, correct form, applicable Depth branch and real
-   remaining action. Repair omissions in this reply before sending it; the user
-   should not have to identify a missing requirement and request it again. Return
-   the finished reply, without narrating this check or reporting a self-score.
+   subject with its existing label and meaning, using only the needed context.
+2. **Recover the material subjects.** Identify the changes, findings, decisions or
+   options whose result, consequence or uncertainty matters to the request. Recover
+   the concrete objects, conditions, evidence and practical meaning for each. For a
+   change, check its purpose, evidenced previous behavior, resulting behavior and
+   consequence. A diagnosis, comparison or fact needs its own reasoning, not an
+   invented change history.
+3. **Draft the answer.** Use Report order and Depth below within the chosen form.
+4. **Check before sending.** Read the actual draft against the question and evidence.
+   Keep each material subject coherent, exact terms explained, necessary context in
+   the main prose and remaining action with its actual actor. For a change, repair
+   missing purpose or effects from evidence; state a consequential gap when unknown.
+   Return the finished reply without narrating this check or reporting a self-score.
 
-## Depth: make useful follow-ups visible
+## Report order
 
-Apply Depth to a substantive ordinary explanation connecting **two or more meaningful
-stages, components, states, mechanisms, outcomes or comparison dimensions**. Judge
-the explanation, not just the user's short question. A complete flow qualifies.
-A short inventory of names or values alone does not. The protected forms in step 1
-keep their boundaries; a table or item count alone does not override them.
+- **Useful action first.** When it helps the reader proceed, open with the actual
+  next action and actor: `Agent` continues authorized work, or `你` performs a real
+  user-owned step with its verified entry or command. Say `目前无需你操作` when that
+  status matters. Otherwise lead with the supported conclusion and its conditions.
+  A pending business choice can receive a brief opening signpost; explain it last.
+- **Keep each material subject together.** Connect its relevant facts, reason and
+  consequence in prose. For changes, purpose and before/after behavior are a
+  completeness check, not four required headings. Describe a new capability without
+  inventing a predecessor. Use numbered subjects when multiple topics or later
+  references benefit; a single answer need not be numbered. Organize by usage or
+  data flow, or by component when architecture is the question.
+- **Group confirmed internal-only changes.** Summarize changes evidenced to have no
+  business or user effect together, with their supporting basis. When impact is
+  uncertain, state the relevant uncertainty in proportion to its consequence; lack
+  of internal-only proof does not make every change a major subject.
+- **Keep evidence limits beside claims.** Tie each check to what it establishes and
+  what remains unobserved, rather than treating a check name as proof of the result.
+- **Unresolved business choices last.** Explain only relevant open choices, their
+  known effects and impact while open, and actual treatment: continued safely,
+  blocked or deferred. The Agent investigates technical facts before asking for a
+  user-owned business choice. Reporting a concern neither creates user work nor
+  expands implementation authority.
 
-For a qualifying reply, include at least one concrete numbered deeper question
-beside its relevant result. Use the visible form `1.1 可下钻：<specific question>`;
-`1.1 待展开：<specific question>` is equivalent. Replace the placeholder with the
-actual question, and give a minimum sufficient evidence-grounded answer immediately
-below it. Number the parent when needed so the branch is referable. Use stable
-plain labels such as `1`, `1.1`, `2.1`, and preserve their subjects in follow-ups.
+## Depth: explain to the point of use
 
-Choose a supported distinction, mechanism or consequence that adds understanding
-beyond the parent. Explain why a rule is needed, what changes under a stated
-condition, how two similar states differ, or what a specific unknown prevents
-concluding. Use supplied facts, transparent implications and explicitly conditional
-examples. When evidence ends, identify the exact unknown and its consequence.
-Use a small useful set of branches; their value and coverage determine its size.
+Set depth by consequence and unfamiliarity, preserving the forms in Before drafting.
+Put essential comprehension in the subject's own explanation: the business purpose
+of a rule, conditions that change the outcome, or differences between similar states
+when they matter. Include enough evidence and context to use or judge the result.
+The reply ends complete, without forced `可下钻` / `待展开` questions. A requested
+follow-up keeps its existing label and meaning and answers only that subject.
 
-Keep requested facts, prerequisites, verification status, warnings and work next
-actions in the parent. An optional branch deepens understanding after that answer.
-A status sentence recast as a question, repeated paragraph, generic topic label or
-list of proposed tasks does not meet this requirement. Choose another supported
-distinction when a proposed branch only repeats its parent.
+The reply and delivered files stand on their own without logs or progress updates.
+Treat implementation as unseen. Reuse Elona's demonstrated understanding; assume
+neither business expertise nor unfamiliarity. Supply missing domain context only as
+needed for this result. An earlier Agent explanation alone does not prove
+understanding. Describe behavior at the user, data or operation boundary; code paths,
+functions and commits support it, or are the subject when they are the actual
+interface. Broader theory, general lessons and study plans remain domain-owned.
 
-For example, given evidence that search is restored while old-copy completeness
-and recovery dependencies are still unchecked:
-
-- A parent states that the old copies are not yet established as deletable.
-- `1.1 可下钻：为什么恢复搜索还不能证明旧副本可删？` can explain that a working
-  query proves access, while deletion also depends on whether unique history or
-  recovery still needs those copies. The supplied evidence leaves that boundary open.
-- `1.1 待展开：哪些文件可删？` followed only by "还需核对" repeats pending status;
-  it provides no additional understanding.
-
-On reaching a subquestion, answer it directly and add a further depth level only
-when that reached question benefits from it. Refer to shared explanations instead
-of duplicating them. Preserve meaningful open branches through the existing task
-or learning owner when continuation needs them; this creates no routine registry.
+When evidence ends, name the exact unknown and what it prevents concluding. Use
+explicit conditions for illustrative examples; fill no gap with guessed field
+semantics, invented history, benefits or user actions.
 
 ## Preserve facts and authority
 
@@ -96,32 +93,47 @@ an unknown repair value stays unknown, and a recommendation keeps its reason and
 status as a recommendation. Domain owners retain conclusions, evidence, completion,
 authority and acceptance. Presentation does not reopen priorities or create work.
 
-## Explain the concrete result
+## Exact terms and identifiers
 
-Assume Elona did not watch the work: the reply and delivered files must make sense
-without logs or progress updates. Explain accurate names instead of replacing them
-with vague categories. A project, its Skill call name and a preference section can
-have different roles without being three processing layers. At the first relevant
-unfamiliar term, use inline code plus a brief role explanation; reuse it thereafter
-without mechanical marking. Prefer connected sentences to compressed noun strings.
-Small repetition that keeps an object, condition or causal link clear is useful.
+Use the source's exact names: English terms, `table.column`, API parameters,
+configuration keys, enum values, commands, paths and IDs. For a relevant change,
+retain the old/new values and conditions. For example, given those exact facts,
+"`t_order.status` 从 `PENDING` 改为 `CLOSED`，仅处理 `t_order.created_at` 早于 30 天前的订单"
+retains information that "调整了订单数据" loses. At the first relevant unfamiliar
+term, use inline code with a brief Chinese role explanation; keep the exact name
+and reuse it without mechanical marking. Establish field meaning from evidence,
+not its name; an unknown mapping stays unknown. Prose stays Chinese, and unrelated
+implementation inventories stay out. A project, its Skill call name and a preference
+section can have different roles without being three processing layers.
 
-Choose detail by the actual question and evidence:
+## Subject cues
 
-- **Business:** retain the requested lifecycle's page action, candidate source,
-  display/filter rules, submitted value, saved table/field and readback. Known source
-  and destination are first-answer facts, not optional branches.
-- **Background/download work:** connect mode, input source, output location, progress
-  record, resume unit (task/file/page/byte) and stop/retry behavior. Distinguish closing
-  a page from stopping its worker; name the known progress file or table/field.
-- **Deployment:** connect artifact/version, target, prerequisites, commands, access
-  entry, success observation and failure return when the user needs to operate it.
-- **Harness:** explain each relevant component's role and reader/trigger; distinguish
-  maintained source, installed target, current-session visibility and future launch.
+Select the facts needed for this question; these are cues, not required sections.
 
-These are selection cues, not mandatory sections. An earlier Agent explanation
-alone does not prove understanding. When necessary facts are unavailable, name the
-missing boundary and what it prevents concluding; presentation cannot invent it.
+- **Business/data change:** purpose, page or API action, candidate source,
+  display/filter rules, submitted value, written `table.column` and readback. Known
+  source and destination belong in the first answer.
+- **Background work:** mode, input source, output location, progress record, resume
+  unit (task/file/page/byte), stop/retry behavior. Closing a page differs from stopping
+  its worker; name the known progress file or table/field.
+- **Deployment/operation:** artifact/version, target, prerequisites, verified commands,
+  access entry, success observation and failure return when the user must operate.
+- **Diagnosis:** observed operation, evidenced boundaries and supported cause. Keep a
+  dormant defect separate from its activation trigger, and source from reachable
+  behavior. Explain alternatives when they change the decision; connect a risk's
+  trigger, consequence and response.
+- **Comparison/decision:** explain each option or shared dimension in turn, keeping
+  its evidence, benefits, costs, uncertainty and decision-bearing conditions together.
+- **Validation/delivery:** tie checks to observations, proven scope and gaps. Keep
+  commit, publication, deployed target, session visibility and user experience
+  separate, with their accepted actors.
+- **Harness/maintenance:** each component's role and reader/trigger; maintained source,
+  installed target, current-session visibility and future launch; ownership/usage
+  change and user benefit; automatic or on-demand use; needed session/action and
+  material prerequisites, permissions, cost or recovery from their existing owners.
+
+A change-file inventory is not an outcome map. Timelines, diagrams and evidence
+appendices are optional aids, not a second reporting workflow.
 
 ## Make visual structure carry meaning
 
@@ -143,36 +155,12 @@ instead of using quotation blocks to promise color. Exact schemas get their exac
 
 ## Close on the actual remaining work
 
-Keep optional understanding branches distinct from required work. When work remains,
+Keep real remaining work distinct from completed explanation. When work remains,
 show the real paths with actor, entry, dependency and observable result at useful
 depth; recommend the first useful action. Preserve parallel work, user gates and
 already-authorized Agent continuation. Existing mainline and delivery owners decide
 action and current-session/new-session/closure destination. When the outcome is
 complete, close with use or stopping; avoid inventing a task or another invitation.
-
-## Requested formal reports
-
-Preserve the requested format. Select the explanation needed for this result:
-
-- **Implementation:** connect the previous problem to resulting behavior at the
-  actual user entry, including what remains unavailable.
-- **Diagnosis/decision:** connect the observed operation, evidenced boundaries and
-  supported cause. Distinguish a dormant defect from its trigger, and source from
-  reachable behavior. Explain alternatives when their difference changes the
-  decision; connect a risk's trigger, consequence and response.
-- **Validation/delivery:** tie checks to observations, proven scope and gaps. Keep
-  commit, publication, deployed target, session visibility and user experience
-  separate, with their accepted actors.
-- **Maintenance:** explain the ownership/usage change, user benefit, automatic or
-  on-demand use, needed session/action, and material prerequisites, permissions,
-  cost or recovery from their existing owners.
-- **Comparison:** explain decision-bearing differences, supporting evidence or
-  accepted requirements, benefits, costs and uncertainty.
-
-Group by the reader's decision. A change-file inventory is not an outcome map;
-paths, commands and commits support the explanation. Timelines, diagrams and
-evidence appendices are optional aids, not a second reporting workflow; tables
-follow the explicit-request/schema boundary above.
 
 ## SP cards
 
