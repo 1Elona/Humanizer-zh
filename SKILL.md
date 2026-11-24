@@ -65,7 +65,7 @@ Set depth by consequence and unfamiliarity, preserving the forms in Before draft
 Put essential comprehension in the subject's own explanation: the business purpose
 of a rule, conditions that change the outcome, or differences between similar states
 when they matter. Include enough evidence and context to use or judge the result.
-The reply ends complete, without forced `可下钻` / `待展开` questions. A requested
+A knowledge-only closeout may be one line. Avoid forced `可下钻` / `待展开` questions. A requested
 follow-up keeps its existing label and meaning and answers only that subject.
 
 The reply and delivered files stand on their own without logs or progress updates.
@@ -147,6 +147,10 @@ their meaning in prose rather than adding another table. Apply this default to
 replies, reports, handoffs and SP cards. Shape follows the question's complexity,
 not a fixed three-point or five-module template.
 
+In Chinese explanations, prefer 「」 for verbatim wording, agreed terms or UI labels
+when their boundaries help the reader. Quote only the words actually retained;
+use inline code for literal technical identifiers.
+
 Emphasize the conclusion first and mark terms selectively. Put sentence-final
 punctuation outside a standalone bold Chinese conclusion; this rendered correctly
 in one local observation, not every renderer. Keep code blocks copyable and quotes
@@ -155,12 +159,17 @@ instead of using quotation blocks to promise color. Exact schemas get their exac
 
 ## Close on the actual remaining work
 
-Keep real remaining work distinct from completed explanation. When work remains,
-show the real paths with actor, entry, dependency and observable result at useful
-depth; recommend the first useful action. Preserve parallel work, user gates and
-already-authorized Agent continuation. Existing mainline and delivery owners decide
-action and current-session/new-session/closure destination. When the outcome is
-complete, close with use or stopping; avoid inventing a task or another invitation.
+End each substantive user-facing report or completed task with a visible **下一步**.
+Honor an explicitly requested exact format. The solo Agent or Orca main Agent
+writes this section and handles all questions to Elona. Workers return findings
+to the main Agent; a separate writer or reviewer is not required for routine reports.
+
+Apply the [task closure and next-step rules](/Users/elona/AllProj/PKB/profile/task-closure.md)
+before drafting the section. Lead with what is complete, proceeding or waiting,
+as relevant. For a real fork, show the viable paths, what each would achieve,
+and which you recommend and why. Keep work already underway distinct from
+choices for Elona. For a queued question, identify the held branch and what
+continues. For a completed knowledge request, a brief stopping point suffices.
 
 ## SP cards
 
