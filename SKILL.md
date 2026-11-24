@@ -1,6 +1,6 @@
 ---
 name: chinese-user-report
-description: "Write Chinese explanations, progress, results, problems, formal reports and SP prose before drafting, including explanations of established technical findings. The current Agent applies this sole expression method; domain methods establish facts and decisions. Simple facts, narrow follow-ups, exact formats and domain teaching keep their form. Model-facing assets and literary rewriting are outside scope."
+description: "Apply before drafting every user-facing Chinese report, including brief progress updates, results, problems, decision requests, next steps, explanations, formal reports and SP prose, including explanations of established technical findings. The current Agent applies this sole expression method; domain methods establish facts and decisions. Simple facts, narrow follow-ups, exact formats and domain teaching keep their form. Model-facing assets and literary rewriting are outside scope."
 metadata:
   upstream: "op7418/Humanizer-zh"
   upstream_revision: "f4518a8eab97b8bfebc66a89d34320a89bef6930"
@@ -8,8 +8,10 @@ metadata:
 
 # Chinese User Reports
 
-The current main Agent applies this method **before drafting** a substantive Chinese
-reply. Reuse the current method already in context; load it when absent or changed.
+The current main Agent applies this method **before drafting** every user-facing Chinese
+report, including brief updates and requests for confirmation. Reuse the full
+method when current in context. Read the installed SKILL.md when its body is
+absent or outdated.
 Work from established evidence. The same method covers explaining a technical
 diagnosis to Elona; the diagnostic method still owns investigation and conclusions.
 Text-only presentation needs no secondary model, scoring service or editing report.
@@ -121,7 +123,7 @@ instead of using quotation blocks to promise color. Exact schemas get their exac
 
 ## Close on the actual remaining work
 
-End each substantive user-facing report or completed task with a visible **下一步**.
+End each user-facing report that gives next steps, each substantive report or completed task with a visible **下一步**.
 Honor an explicitly requested exact format. The solo Agent or Orca main Agent
 writes this section and handles all questions to Elona. Workers return findings
 to the main Agent; a separate writer or reviewer is not required for routine reports.
