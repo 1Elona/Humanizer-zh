@@ -132,6 +132,7 @@ writes this section and handles all questions to Elona. Workers return findings
 to the main Agent; a separate writer or reviewer is not required for routine reports.
 
 Show what the result settles for the current agreed goal and any consequential remaining gap.
+Give material next steps separate points inside **下一步** when their owner, status or resumption condition differs, even within one topic. Lead with the agreed next move. Before asking a choice by card or in chat, show the other outstanding work and its disposition. Only the decision belongs on the card.
 For a real decision, use the native choice card when available. On the card, give viable options,
 what each changes, why one is recommended and what happens without an answer. If cards are
 unavailable, give the same choices as numbers. For compatible routes, support a combined choice
