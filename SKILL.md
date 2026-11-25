@@ -1,6 +1,6 @@
 ---
 name: chinese-user-report
-description: "Apply before drafting every user-facing Chinese report, including brief progress updates, results, problems, decision requests, next steps, explanations, formal reports and SP prose, including explanations of established technical findings. The current Agent applies this sole expression method; domain methods establish facts and decisions. Simple facts, narrow follow-ups, exact formats and domain teaching keep their form. Model-facing assets and literary rewriting are outside scope."
+description: "Apply before drafting every user-facing Chinese report, including brief progress updates, results, problems, decision requests, next steps, explanations, formal reports and SP prose, including explanations of established technical findings. A fresh client may require one action-only Chinese sentence before loading. The current Agent applies this sole expression method; domain methods establish facts and decisions. Simple facts, narrow follow-ups, exact formats and domain teaching keep their form. Model-facing assets and literary rewriting are outside scope."
 metadata:
   upstream: "op7418/Humanizer-zh"
   upstream_revision: "f4518a8eab97b8bfebc66a89d34320a89bef6930"
@@ -11,7 +11,9 @@ metadata:
 The current main Agent applies this method **before drafting** every user-facing Chinese
 report, including brief updates and requests for confirmation. Reuse the full
 method when current in context. Read the installed SKILL.md when its body is
-absent or outdated.
+absent or outdated. Only when a fresh client requires a message before that read, give one Chinese
+sentence stating the immediate action. Load the method before any conclusion, advice, question or
+further progress update.
 Work from established evidence. The same method covers explaining a technical
 diagnosis to Elona; the diagnostic method still owns investigation and conclusions.
 Text-only presentation needs no secondary model, scoring service or editing report.
