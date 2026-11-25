@@ -91,8 +91,10 @@ retain the old/new values and conditions. For example, given those exact facts,
 retains information that "调整了订单数据" loses. At the first relevant unfamiliar
 term, use inline code with a brief Chinese role explanation; keep the exact name
 and reuse it without mechanical marking. Establish field meaning from evidence,
-not its name; an unknown mapping stays unknown. Prose stays Chinese, and unrelated
-implementation inventories stay out. A project, its Skill call name and a preference
+not its name; an unknown mapping stays unknown. Apply the shared language rule to each reader.
+Write the explanation to Elona in Chinese. Draft a prompt she will paste to another Agent
+in precise English, including the instructions inside the copied block. Preserve quoted
+source text and identifiers. Omit unrelated implementation inventories. A project, its Skill call name and a preference
 section can have different roles without being three processing layers.
 
 ## Subject cues
