@@ -18,6 +18,8 @@ Text-only presentation needs no secondary model, scoring service or editing repo
 
 ## Before drafting
 
+Before composing a final reply, apply the [task closure and next-step rules](/Users/elona/AllProj/PKB/profile/task-closure.md) to the current assignment. Use an interim update when answering a question during ongoing work.
+
 Use the requested depth and format. For “展开 2.1”, retain that label and expand
 only that subject. For a change, recover the purpose, previous behavior, new
 behavior and consequence before compressing the explanation.
@@ -25,8 +27,8 @@ behavior and consequence before compressing the explanation.
 ## Report order
 
 - **Useful action first.** When it helps the reader proceed, open with the actual
-  next action and actor: `Agent` continues authorized work, or `你` performs a real
-  user-owned step with its verified entry or command. Say `目前无需你操作` when that
+  action and actor. For Agent progress, say what has actually started. For a real
+  user-owned step, give its verified entry or command. Say `目前无需你操作` when that
   status matters. Otherwise lead with the supported conclusion and its conditions.
   A pending business choice can receive a brief opening signpost; explain it last.
 - **Keep each material subject together.** Connect its relevant facts, reason and
@@ -53,8 +55,7 @@ Set depth by consequence and unfamiliarity, preserving the forms in Before draft
 Put essential comprehension in the subject's own explanation: the business purpose
 of a rule, conditions that change the outcome, or differences between similar states
 when they matter. Include enough evidence and context to use or judge the result.
-A knowledge-only closeout may be one line. Avoid forced `可下钻` / `待展开` questions. A requested
-follow-up keeps its existing label and meaning and answers only that subject.
+A knowledge-only closeout may be one line. Avoid forced `可下钻` / `待展开` questions. A narrow follow-up keeps its existing label and meaning. Keep that explanation focused.
 
 The reply and delivered files stand on their own without logs or progress updates.
 Treat implementation as unseen. Reuse Elona's demonstrated understanding; assume
@@ -128,13 +129,12 @@ Honor an explicitly requested exact format. The solo Agent or Orca main Agent
 writes this section and handles all questions to Elona. Workers return findings
 to the main Agent; a separate writer or reviewer is not required for routine reports.
 
-Apply the [task closure and next-step rules](/Users/elona/AllProj/PKB/profile/task-closure.md)
-before drafting the section. Lead with what is complete, proceeding or waiting,
-as relevant. Use bullets by default. When Elona has a choice, number each viable
-route on its own line, lead with a short action label and give its consequence.
-Mark the recommended route and explain why. Keep work already underway distinct from
-choices for Elona. For a queued question, identify the held branch and what
-continues. For a completed knowledge request, a brief stopping point suffices.
+Show what the result settles for the current agreed goal and any consequential remaining gap.
+For a real decision, use the native choice card when available. On the card, give viable options,
+what each changes, why one is recommended and what happens without an answer. If cards are
+unavailable, give the same choices as numbers. For compatible routes, support a combined choice
+or a reply with their numbers. Identify which work waits for her, where it belongs and what
+actually proceeds. For a completed knowledge request, a brief stopping point suffices.
 
 ## SP cards
 

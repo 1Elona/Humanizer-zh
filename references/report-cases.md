@@ -263,3 +263,12 @@ as summarized in the supplied 2026-11-05 authoring baseline and design. No sourc
 text was reused or fetched for this implementation; no pinned revision or license
 claim is made for that inspiration. Humanizer-zh's preserved upstream revision and
 MIT license remain unchanged. No second expression Skill or clinical framing is added.
+
+## Continuing work and meaningful choices
+
+39. An ongoing three-item review has cleared the first item. Elona approves it and asks what a term means. Review is authorized until the next material finding. Answer the term, then inspect the remaining items. A valid decision reply cites the new evidence, explains which goal it affects and offers the real alternatives and their consequences. A promise to read the next item fails even with a visible **下一步**.
+40. With the same facts, Elona asks only for the name of the next item and explicitly pauses inspection. Give the name and leave the remaining evidence uninspected. A completed local check with no agreed work remaining can close.
+41. A screenshot of an unfinished review illustrates a failure in the shared reporting mechanism. Elona asks to repair the mechanism. Use the screenshot to verify that repair. Starting the depicted review or giving its operator a plan leaves this assignment unfinished.
+
+42. A fallback delivered the requested content. A verified fault still affects a recurring use and its repair was explicitly deferred. Elona asked to discuss whether to adopt a shared change. Report the delivered coverage and the open capability fault separately. Preserve the deferral. If asking for adoption, send actual choices with effects, recommendation and waiting default. The adoption decision holds that change only.
+43. A main task has a bounded independent check, an optional clarification for Elona, and a newly found repair with its own acceptance. Main can delegate the authorized check and collect the result. A supported side chat can isolate the clarification. The repair keeps a distinct owner and any existing deferral. A venue alone supplies neither authorization nor proof of progress.
