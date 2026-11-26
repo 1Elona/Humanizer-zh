@@ -1,6 +1,6 @@
 ---
 name: chinese-user-report
-description: "Apply before drafting every user-facing Chinese report, including brief progress updates, results, problems, decision requests, next steps, explanations, formal reports and SP prose, including explanations of established technical findings. A fresh client may require one action-only Chinese sentence before loading. The current Agent applies this sole expression method; domain methods establish facts and decisions. Simple facts, narrow follow-ups, exact formats and domain teaching keep their form. Model-facing assets and literary rewriting are outside scope."
+description: "中文汇报表达规范：向用户输出中文进展、结果、问题、决策请求、技术解释或下一步前必读（新客户端首句纯动作告知除外）；简单直答、窄追问、指定格式与领域教学保持原貌，不含模型内部资产与文学改写。"
 metadata:
   upstream: "op7418/Humanizer-zh"
   upstream_revision: "f4518a8eab97b8bfebc66a89d34320a89bef6930"
